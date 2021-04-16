@@ -27,7 +27,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "imgproxy-digitalbc" #Must be unique in Heroku
           heroku_email: "jfournie@vcc.ca"
-          buildpack: "https://github.com/jamesrf/heroku-buildpack-imgproxy"
         env:
           IMGPROXY_SALT: ${{ secrets.IMGPROXY_SALT }}
           IMGPROXY_KEY: ${{ secrets.IMGPROXY_KEY }}
